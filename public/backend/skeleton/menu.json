@@ -1,0 +1,20 @@
+[
+  {
+    "name":"我的桌面",
+    "id":1,
+    "pid":0,
+    "url":"/backend/home/index"
+  },
+  {
+    "name":"问答管理",
+    "id":2,
+    "pid":0,
+    "url":"/backend/question_answer/index"
+  },
+  {
+    "name":"后台用户",
+    "id":3,
+    "pid":0,
+    "url":"/backend/admin_user/index"
+  }
+]

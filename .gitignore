@@ -1,0 +1,7 @@
+.*
+!.gitignore
+.env
+/runtime/logs/*
+/runtime/view/*
+/runtime/hyperf.pid
+/vendor/*
