@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>使用说明</title>
-    <link rel="stylesheet" href="/doc/statics/plugin/layui/css/layui.css">
-    <link rel="stylesheet" href="/doc/statics/css/style.css">
-    <link rel="stylesheet" href="/doc/statics/plugin/github-markdown/github-markdown.css">
-    <link rel="stylesheet" href="/doc/statics/plugin/highlight/github.css">
+    <link rel="stylesheet" href="/public/doc/statics/plugin/layui/css/layui.css">
+    <link rel="stylesheet" href="/public/doc/statics/css/style.css">
+    <link rel="stylesheet" href="/public/doc/statics/plugin/github-markdown/github-markdown.css">
+    <link rel="stylesheet" href="/public/doc/statics/plugin/highlight/github.css">
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
     <div class="layui-header">
         <div class="layui-logo">
-            <a href="/doc/index.html" title="首页">汇聊接口文档</a>
+            <a href="/public/doc/index.html" title="首页">接口文档</a>
         </div>
         <!--搜索框-->
         <div class="search">
@@ -38,8 +38,8 @@
             <article class="markdown-body" id="j-markdown-body">
                 <h1>token 使用说明</h1>
 <h2>token的时效性</h2>
-<p>token是有时效的，客户端需要根据<a href="/doc/token/in.html">服务端返回的token过期时间与服务器当前时间</a>，对token的过期进行监控。
-当token即将过期时，应调用<a href="/doc/token/refresh.html">刷新token接口</a>，重新获取token。</p>
+<p>token是有时效的，客户端需要根据<a href="/public/doc/token/in.html">服务端返回的token过期时间与服务器当前时间</a>，对token的过期进行监控。
+当token即将过期时，应调用<a href="/public/doc/token/refresh.html">刷新token接口</a>，重新获取token。</p>
 <h2>token的使用方式</h2>
 <p>如果某个接口需要客户端传递token，那么客户端应该在<code>http</code>请求的<code>header</code>头部中传递字段<code>Authorization</code>。
 示例：<code>Authorization: 6hxMWMW1sCBL65GXdLRsGkruwV9Z6p9i4</code>。</p>
@@ -51,11 +51,11 @@
 <li class="layui-icon layui-icon-top return-top"></li>
 <script>
     //当前文档部署到具体站点时候的目录
-    var doc_root = '/doc/';
+    var doc_root = '/public/doc/';
 </script>
-<script src="/doc/statics/plugin/layui/layui.js"></script>
-<script src="/doc/statics/plugin/highlight/highlight.min.js"></script>
-<script src="/doc/statics/js/index.js"></script>
+<script src="/public/doc/statics/plugin/layui/layui.js"></script>
+<script src="/public/doc/statics/plugin/highlight/highlight.min.js"></script>
+<script src="/public/doc/statics/js/index.js"></script>
 <script>
 //高亮代码
 hljs.initHighlightingOnLoad();

@@ -34,7 +34,8 @@
         "hyperf/validation": "^2.0",
         "buexplain/alarm": "^0.1.0",
         "buexplain/token": "^0.1.0",
-      "ext-json": "*"
+      "ext-json": "*",
+        "buexplain/mddoc": "^0.1.0"
     },
     "require-dev": {
         "swoole/ide-helper": "^4.5",

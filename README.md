@@ -3,7 +3,8 @@
 本项目是基于 [hyperf](https://github.com/hyperf/hyperf) 的开发骨架，做好了如下工作：
 1. 接入钉钉告警
 2. 完成token接口
-3. 自带后台界面
+3. 后台管理
+4. 文档管理
 
 ## 初始化
 
@@ -24,6 +25,8 @@ php bin/hyperf.php migrate:fresh --seed
 > 管理员：admin 123456
 >
 > 注册用户：test 123456
+
+文档地址：`http://ip:port/public/doc/index.html`
 
 ## License
 [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
