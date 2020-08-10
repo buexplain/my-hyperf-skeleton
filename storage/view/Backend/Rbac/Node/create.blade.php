@@ -56,7 +56,7 @@
                 排序
             </label>
             <div class="layui-input-block">
-                <input type="number" name="sort_by" value="1991" required lay-verify="required" placeholder="排序" autocomplete="off" class="layui-input">
+                <input type="number" name="sort_at" value="1991" required lay-verify="required" placeholder="排序" autocomplete="off" class="layui-input">
             </div>
         </div>
 

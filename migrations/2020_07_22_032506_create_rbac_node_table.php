@@ -19,7 +19,7 @@ class CreateRbacNodeTable extends Migration
             $table->string('url')->default('')->comment('节点路径');
             $table->tinyInteger('is_menu')->default(\App\Model\RbacNode::MENU_NO)->comment('是否为菜单 是：1，否：2');
             $table->tinyInteger('is_parent')->default(\App\Model\RbacNode::PARENT_NO)->comment('是否为父节点 是：1，否：2');
-            $table->integer('sort_by')->default(1991)->comment('排序');
+            $table->integer('sort_at')->default(1991)->comment('排序');
         });
     }
 

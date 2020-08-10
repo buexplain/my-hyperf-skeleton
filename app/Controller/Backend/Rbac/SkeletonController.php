@@ -43,7 +43,7 @@ class SkeletonController extends AbstractController
     public function menu()
     {
         $mod = RbacNode::query()->where('is_menu', RbacNode::MENU_YES);
-        $mod->orderBy('sort_by', 'asc');
+        $mod->orderBy('sort_at', 'asc');
         $result = $mod->get();
         return $result;
     }

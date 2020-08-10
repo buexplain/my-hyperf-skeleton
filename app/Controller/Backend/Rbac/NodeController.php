@@ -48,7 +48,7 @@ class NodeController extends AbstractController
     public function lists()
     {
         $pid = intval($this->request->query('id', 0));
-        return $this->success(RbacNode::query()->where('pid', $pid)->orderBy('sort_by', 'asc')->get());
+        return $this->success(RbacNode::query()->where('pid', $pid)->orderBy('sort_at', 'asc')->get());
     }
 
     public function store()

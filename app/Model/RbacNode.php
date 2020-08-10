@@ -13,7 +13,7 @@ use Hyperf\DbConnection\Model\Model;
  * @property string $url 节点路径
  * @property int $is_menu 是否为菜单 是：1，否：2
  * @property int $is_parent 是否为父节点 是：1，否：2
- * @property int $sort_by 排序
+ * @property int $sort_at 排序
  */
 class RbacNode extends Model
 {
@@ -28,13 +28,13 @@ class RbacNode extends Model
      *
      * @var array
      */
-    protected $fillable = ['id', 'created_at', 'updated_at', 'pid', 'name', 'url', 'is_menu', 'is_parent', 'sort_by'];
+    protected $fillable = ['id', 'created_at', 'updated_at', 'pid', 'name', 'url', 'is_menu', 'is_parent', 'sort_at'];
     /**
      * The attributes that should be cast to native types.
      *
      * @var array
      */
-    protected $casts = ['id' => 'integer', 'created_at' => 'datetime', 'updated_at' => 'datetime', 'pid' => 'integer', 'is_menu' => 'integer', 'is_parent' => 'integer', 'sort_by' => 'integer'];
+    protected $casts = ['id' => 'integer', 'created_at' => 'datetime', 'updated_at' => 'datetime', 'pid' => 'integer', 'is_menu' => 'integer', 'is_parent' => 'integer', 'sort_at' => 'integer'];
     //是否为菜单
     const MENU_YES = 1;
     const MENU_NO = 2;
