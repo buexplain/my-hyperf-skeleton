@@ -1,5 +1,6 @@
 .*
 !.gitignore
+!.env.example
 .env
 /runtime/logs/*
 /runtime/view/*
