@@ -13,6 +13,7 @@ declare(strict_types=1);
 use Hyperf\HttpServer\Router\Router;
 
 Router::addRoute(['GET', 'POST', 'HEAD'], '/', \App\Controller\IndexController::class.'@index');
+Router::addRoute(['GET', 'POST', 'HEAD'], '/test', \App\Controller\IndexController::class.'@test');
 
 //token相关接口
 Router::addGroup('/token/',function () {

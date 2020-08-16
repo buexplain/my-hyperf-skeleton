@@ -12,6 +12,7 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use App\Request\FooRequest;
+use \Hyperf\Guzzle\ClientFactory;
 
 class IndexController extends AbstractController
 {
@@ -24,5 +25,15 @@ class IndexController extends AbstractController
             'method' => $method,
             'message' => "Hello {$user}.",
         ];
+    }
+
+    public function test(ClientFactory $clientFactory)
+    {
+        $options = [
+            'timeout'=>20
+        ];
+        $client = $clientFactory->create($options);
+        $resp = $client->get('http://192.168.3.6:8080/hello');
+        return $resp->getBody()->getContents();
     }
 }
