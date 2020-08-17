@@ -28,5 +28,8 @@ php bin/hyperf.php migrate:fresh --seed
 
 文档地址：`http://ip:port/public/doc/index.html`
 
+## 进程管理
+结束信号：`kill -15 $(cat runtime/hyperf.pid)`
+
 ## License
 [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
