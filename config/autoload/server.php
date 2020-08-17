@@ -31,10 +31,13 @@ return [
         'worker_num' => swoole_cpu_num(),
         // Task Worker 数量，根据您的服务器配置而配置适当的数量
         'task_worker_num' => intval(env('TASK_WORKER_NUM', swoole_cpu_num()*2)),
-        //进程结束超时等待
-        'max_wait_time' => intval(env('MAX_WAIT_TIME', 60)),
         // 因为 `Task` 主要处理无法协程化的方法，所以这里推荐设为 `false`，避免协程下出现数据混淆的情况
         'task_enable_coroutine' => false,
+        //进程结束超时等待
+        'max_wait_time' => intval(env('MAX_WAIT_TIME', 60)),
+        //master进程投递任务到worker进程的策略
+        //@link https://wiki.swoole.com/#/server/setting?id=dispatch_mode
+        'dispatch_mode' => 3,
         'enable_static_handler'=>true,
         'document_root' => BASE_PATH,
         'static_handler_locations'=>[
@@ -43,7 +46,7 @@ return [
         'pid_file' => BASE_PATH . '/runtime/hyperf.pid',
         'open_tcp_nodelay' => true,
         'max_coroutine' => 100000,
-        'open_http2_protocol' => true,
+        'open_http2_protocol' => false,
         'max_request' => 100000,
         'socket_buffer_size' => 2 * 1024 * 1024,
         'buffer_output_size' => 2 * 1024 * 1024,

@@ -933,16 +933,16 @@
         },
         {
             "name": "hyperf/cache",
-            "version": "v2.0.3",
+            "version": "v2.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/cache.git",
-                "reference": "b924bc74261f820da2a2eee39eca5a1c2d47c8ab"
+                "reference": "a0b7bcabeaf9ba4378855ec1cb6f3e3261eb1181"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/cache/zipball/b924bc74261f820da2a2eee39eca5a1c2d47c8ab",
-                "reference": "b924bc74261f820da2a2eee39eca5a1c2d47c8ab",
+                "url": "https://api.github.com/repos/hyperf/cache/zipball/a0b7bcabeaf9ba4378855ec1cb6f3e3261eb1181",
+                "reference": "a0b7bcabeaf9ba4378855ec1cb6f3e3261eb1181",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -995,7 +995,7 @@
                 "hyperf",
                 "php"
             ],
-            "time": "2020-07-15T09:05:45+00:00"
+            "time": "2020-08-14T07:18:05+00:00"
         },
         {
             "name": "hyperf/command",
@@ -1433,16 +1433,16 @@
         },
         {
             "name": "hyperf/di",
-            "version": "v2.0.4",
+            "version": "v2.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/di.git",
-                "reference": "d50592cb7aa1d987438287b7b9dc554f61f1e9fb"
+                "reference": "c6db024f65d3770fd4e2e43ae93f6c9c5ac8eace"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/di/zipball/d50592cb7aa1d987438287b7b9dc554f61f1e9fb",
-                "reference": "d50592cb7aa1d987438287b7b9dc554f61f1e9fb",
+                "url": "https://api.github.com/repos/hyperf/di/zipball/c6db024f65d3770fd4e2e43ae93f6c9c5ac8eace",
+                "reference": "c6db024f65d3770fd4e2e43ae93f6c9c5ac8eace",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1499,7 +1499,7 @@
                 "php",
                 "swoole"
             ],
-            "time": "2020-07-23T09:37:04+00:00"
+            "time": "2020-08-12T05:29:11+00:00"
         },
         {
             "name": "hyperf/dispatcher",
@@ -7662,7 +7662,6 @@
             "keywords": [
                 "tokenizer"
             ],
-            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
