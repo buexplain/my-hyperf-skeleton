@@ -30,7 +30,7 @@ return [
         'enable_coroutine' => true,
         'worker_num' => swoole_cpu_num(),
         // Task Worker 数量，根据您的服务器配置而配置适当的数量
-        'task_worker_num' => swoole_cpu_num()*2,
+        'task_worker_num' => intval(env('TASK_WORKER_NUM', swoole_cpu_num()*2)),
         // 因为 `Task` 主要处理无法协程化的方法，所以这里推荐设为 `false`，避免协程下出现数据混淆的情况
         'task_enable_coroutine' => false,
         'enable_static_handler'=>true,

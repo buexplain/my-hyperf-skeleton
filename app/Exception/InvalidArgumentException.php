@@ -26,7 +26,7 @@ class InvalidArgumentException extends ClientException
     {
         if(is_null($message)) {
             $message = ErrorCode::getMessage($code);
-        }elseif(ctype_alnum($message)) {
+        }elseif(preg_match("~^[a-zA-Z]{1,1}[a-zA-Z0-9_]*$~", $message) > 0) {
             $message = ErrorCode::getMessage($code).'：'.$message;
         }
         parent::__construct($message, $code, $previous);

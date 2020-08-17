@@ -10,7 +10,7 @@
 
 ## 响应Header
 key|value
-:--|:--
+:---|:---
 Content-Type|application/json
 
 ## 响应body

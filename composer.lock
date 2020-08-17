@@ -249,16 +249,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "1.10.3",
+            "version": "1.10.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "5db60a4969eba0e0c197a19c077780aadbc43c5d"
+                "reference": "bfe91e31984e2ba76df1c1339681770401ec262f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/5db60a4969eba0e0c197a19c077780aadbc43c5d",
-                "reference": "5db60a4969eba0e0c197a19c077780aadbc43c5d",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/bfe91e31984e2ba76df1c1339681770401ec262f",
+                "reference": "bfe91e31984e2ba76df1c1339681770401ec262f",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -274,7 +274,8 @@
             },
             "require-dev": {
                 "doctrine/cache": "1.*",
-                "phpunit/phpunit": "^7.5"
+                "phpstan/phpstan": "^0.12.20",
+                "phpunit/phpunit": "^7.5 || ^9.1.5"
             },
             "type": "library",
             "extra": {
@@ -320,7 +321,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2020-05-25T17:24:27+00:00"
+            "time": "2020-08-10T19:35:50+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -2918,7 +2919,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v7.24.0",
+            "version": "v7.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -2971,7 +2972,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v7.24.0",
+            "version": "v7.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -3021,7 +3022,7 @@
         },
         {
             "name": "illuminate/events",
-            "version": "v7.24.0",
+            "version": "v7.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -3072,7 +3073,7 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v7.24.0",
+            "version": "v7.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
@@ -3133,16 +3134,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v7.24.0",
+            "version": "v7.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "a73fabea211d9b26b76c64a925db4b660d150a88"
+                "reference": "9b0c0af8d2dd1a729f6337d0ed5c81a241ea43ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/a73fabea211d9b26b76c64a925db4b660d150a88",
-                "reference": "a73fabea211d9b26b76c64a925db4b660d150a88",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/9b0c0af8d2dd1a729f6337d0ed5c81a241ea43ab",
+                "reference": "9b0c0af8d2dd1a729f6337d0ed5c81a241ea43ab",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3197,20 +3198,20 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2020-08-06T13:54:33+00:00"
+            "time": "2020-08-10T13:58:23+00:00"
         },
         {
             "name": "illuminate/view",
-            "version": "v7.24.0",
+            "version": "v7.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
-                "reference": "808db49349c24f5f5713a0a30dd7435886fe982f"
+                "reference": "6ad2bb27974199b175a0d685c51325e8e1b3d253"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/view/zipball/808db49349c24f5f5713a0a30dd7435886fe982f",
-                "reference": "808db49349c24f5f5713a0a30dd7435886fe982f",
+                "url": "https://api.github.com/repos/illuminate/view/zipball/6ad2bb27974199b175a0d685c51325e8e1b3d253",
+                "reference": "6ad2bb27974199b175a0d685c51325e8e1b3d253",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3251,7 +3252,7 @@
             ],
             "description": "The Illuminate View package.",
             "homepage": "https://laravel.com",
-            "time": "2020-08-04T14:10:54+00:00"
+            "time": "2020-08-10T20:00:58+00:00"
         },
         {
             "name": "jetbrains/phpstorm-stubs",
@@ -6970,16 +6971,16 @@
         },
         {
             "name": "mockery/mockery",
-            "version": "1.3.2",
+            "version": "1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
-                "reference": "9b6f117dd7d36dc3858d8d8ddf9b3d584fcae283"
+                "reference": "60fa2f67f6e4d3634bb4a45ff3171fa52215800d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/9b6f117dd7d36dc3858d8d8ddf9b3d584fcae283",
-                "reference": "9b6f117dd7d36dc3858d8d8ddf9b3d584fcae283",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/60fa2f67f6e4d3634bb4a45ff3171fa52215800d",
+                "reference": "60fa2f67f6e4d3634bb4a45ff3171fa52215800d",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -6994,7 +6995,7 @@
                 "php": ">=5.6.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~5.7.10|~6.5|~7.0|~8.0|~9.0"
+                "phpunit/phpunit": "^5.7.10|^6.5|^7.5|^8.5|^9.3"
             },
             "type": "library",
             "extra": {
@@ -7037,7 +7038,7 @@
                 "test double",
                 "testing"
             ],
-            "time": "2020-07-09T08:23:05+00:00"
+            "time": "2020-08-11T18:10:21+00:00"
         },
         {
             "name": "myclabs/deep-copy",
