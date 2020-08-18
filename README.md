@@ -21,12 +21,18 @@ copy .env.example .env
 php bin/hyperf.php migrate:fresh --seed
 ```
 
+## 开发注意
+
 后台地址：`http://ip:port/backend/rbac/sign/index`
 > 管理员：admin 123456
 >
 > 注册用户：test 123456
 
 文档地址：`http://ip:port/public/doc/index.html`
+
+优化 Composer 索引：`composer dump-autoload -o`
+
+生成代理类和注解缓存：`php bin/hyperf.php`
 
 ## 进程管理
 
@@ -64,6 +70,11 @@ WantedBy=multi-user.target graphical.target
 修改文件权限：
 ```bash
 chmod 644  /etc/systemd/system/skeleton.service
+```
+
+重载所有修改过的配置文件：
+```bash
+systemctl daemon-reload
 ```
 
 注意：`skeleton`要改为你项目的名称，`ExecStart`的路径要改为绝对路径。
