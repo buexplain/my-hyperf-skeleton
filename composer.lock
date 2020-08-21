@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "buexplain/alarm",
-            "version": "v0.1.1",
+            "version": "v0.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/buexplain/alarm.git",
-                "reference": "ae9f1573e2c3f0e81f1ef5f033e323d6c96176e6"
+                "reference": "9ce3015b5487683870ee3625279e700781201b95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/buexplain/alarm/zipball/ae9f1573e2c3f0e81f1ef5f033e323d6c96176e6",
-                "reference": "ae9f1573e2c3f0e81f1ef5f033e323d6c96176e6",
+                "url": "https://api.github.com/repos/buexplain/alarm/zipball/9ce3015b5487683870ee3625279e700781201b95",
+                "reference": "9ce3015b5487683870ee3625279e700781201b95",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -66,7 +66,7 @@
                 "swoole",
                 "wechat"
             ],
-            "time": "2020-07-28T08:31:07+00:00"
+            "time": "2020-08-20T08:39:00+00:00"
         },
         {
             "name": "buexplain/mddoc",
@@ -7662,6 +7662,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {

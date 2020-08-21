@@ -61,6 +61,7 @@ Type=simple
 LimitNOFILE=65535
 ExecStart=/opt/php/bin/php /opt/skeleton/bin/hyperf.php start
 ExecStop=/bin/kill -15 $MAINPID
+TimeoutStopSec=62s
 Restart=always
 
 [Install]
@@ -84,6 +85,9 @@ systemctl daemon-reload
 systemctl start skeleton.service
 systemctl status skeleton.service
 systemctl stop skeleton.service
+# 查看某个 Unit 的日志
+journalctl -u skeleton.service
+journalctl -u skeleton.service --since today
 ```
 
 ## License
