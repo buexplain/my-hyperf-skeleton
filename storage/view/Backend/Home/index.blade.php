@@ -43,7 +43,7 @@
                         <td>worker num</td>
                         <td>{{config('server.settings.worker_num')}}</td>
                         <td>task worker num</td>
-                        <td>{{config('server.settings.task_worker_num')}}</td>
+                        <td>{{empty(config('server.settings.task_worker_num')) ? '未启用task进程' : config('server.settings.task_worker_num')}}</td>
                     </tr>
                     </tbody>
                 </table>

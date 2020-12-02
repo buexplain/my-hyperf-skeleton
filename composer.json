@@ -27,15 +27,16 @@
         "hyperf/redis": "~2.0.0",
         "hyperf/constants": "~2.0.0",
         "hyperf/model-cache": "~2.0.0",
-        "hyperf/task": "^2.0",
         "hyperf/view": "^2.0",
-        "duncan3dc/blade": "^4.10",
         "hyperf/session": "^2.0",
         "hyperf/validation": "^2.0",
-        "buexplain/alarm": "^0.1.0",
+        "buexplain/alarm": "^2.0.0",
         "buexplain/token": "^0.1.0",
-      "ext-json": "*",
-        "buexplain/mddoc": "^0.1.0"
+        "ext-json": "*",
+        "buexplain/mddoc": "^0.1.0",
+        "hyperf/signal": "^2.0",
+        "hyperf/async-queue": "^2.0",
+        "hyperf/view-engine": "^2.0"
     },
     "require-dev": {
         "swoole/ide-helper": "^4.5",

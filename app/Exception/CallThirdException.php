@@ -22,7 +22,7 @@ class CallThirdException extends ServerException implements MessageInterface
     protected $third_url = '';
 
     /**
-     * 第三方消息
+     * 输出到日志的第三方错误
      * @var string
      */
     protected $log_message = '';
@@ -36,22 +36,40 @@ class CallThirdException extends ServerException implements MessageInterface
     /**
      * CallThirdException constructor.
      * @param string $url 第三方的地址
-     * @param string $message 第三方返回的消息
-     * @param int $code 第三方的错误码
+     * @param string|null $message 第三方返回的消息
+     * @param int|null $code 第三方的错误码
      * @param Exception|null $previous
      *  @throws \Hyperf\Constants\Exception\ConstantsException
      */
-    public function __construct($url, $message, $code, Throwable $previous = null)
+    public function __construct($url, $message=null, $code=null, Throwable $previous = null)
     {
-        $this->log_message = sprintf("%s [%s] [%s]", $message, $code, $url);
-        parent::__construct(sprintf("%s [%s]", $message, $code), ErrorCode::SERVER_CALL_THIRD, $previous);
+        $this->third_url = $url;
+        $this->third_code = $code;
+
+        if (is_null($message)) {
+            $message = ErrorCode::getMessage(ErrorCode::SERVER_CALL_THIRD);
+        }
+
+        if(!is_null($code)) {
+            $this->log_message = sprintf("%s [%s] [%s]", $message, $code, $url);
+            parent::__construct(sprintf("%s [%s]", $message, $code), ErrorCode::SERVER_CALL_THIRD, $previous);
+        }else{
+            $this->log_message = sprintf("%s [%s]", $message, $url);
+            parent::__construct($message, ErrorCode::SERVER_CALL_THIRD, $previous);
+        }
     }
 
+    /**
+     * @return string
+     */
     public function getThirdURL()
     {
         return $this->third_url;
     }
 
+    /**
+     * @return int|null
+     */
     public function getThirdCode()
     {
         return $this->third_code;

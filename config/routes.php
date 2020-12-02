@@ -14,6 +14,8 @@ use Hyperf\HttpServer\Router\Router;
 
 Router::addRoute(['GET', 'POST', 'HEAD'], '/', \App\Controller\IndexController::class.'@index');
 Router::addRoute(['GET', 'POST', 'HEAD'], '/test', \App\Controller\IndexController::class.'@test');
+Router::addRoute(['GET', 'POST', 'HEAD'], '/queue', \App\Controller\IndexController::class.'@queue');
+Router::addRoute(['GET', 'POST', 'HEAD'], '/log/{level}', \App\Controller\IndexController::class.'@log');
 
 //token相关接口
 Router::addGroup('/token/',function () {

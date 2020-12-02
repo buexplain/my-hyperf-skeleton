@@ -46,11 +46,6 @@ return [
             [
                 'class' => \Alarm\Handler::class,
                 'constructor' => [
-                    'alarm'=>function() {
-                        return make(\Alarm\Contract\AlarmInterface::class, [
-                            \Psr\Container\ContainerInterface::class => \Hyperf\Utils\ApplicationContext::getContainer()
-                        ]);
-                    },
                     //此处的handler对应的正是config/autoload/alarm.php配置的key值
                     'handlers'=>[
                         'dingTalk',
